@@ -16,7 +16,7 @@ OPENAI_API_BASE = os.environ["OPENAI_API_BASE"]
 
 # Create an Azure Resource Group
 resource_group = azure_native.resources.ResourceGroup(
-    f"{BASENAME}-dkn-rg", location="uksouth")
+    f"{BASENAME}-dkn-rg", location="westus")
 
 suffix = random.RandomString(
     "suffix",
